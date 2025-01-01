@@ -380,6 +380,10 @@ nav {
 
 @media (max-width: 1111px) {
 
+  .text-blk.headingText {
+    margin-top: 0;
+  }
+
   .responsive-container-block.Container.bottomContainer {
     flex-direction: column-reverse;
     padding-right: 0;
@@ -465,9 +469,14 @@ nav {
   }
 
   .mainImg {
-    margin-left: 10px;
-    margin-top: -55px;
+    margin-top: -75px;
     z-index: 2;
+  }
+
+  .purpleBox {
+    position: relative; 
+    margin-top: -90px;  
+    margin-left: 20px;
   }
 }
 
@@ -1221,12 +1230,21 @@ textarea {
   }
 }
 
+@media (max-width: 800px) {
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin-left: 300px;
+  }
+}
+
 @media (max-width: 550px) {
   .submit-btn {
     display: flex;
     justify-content: center;
     position: relative;
-    margin-left: 150px;
+    margin-left: 110px;
   }
 }
 
