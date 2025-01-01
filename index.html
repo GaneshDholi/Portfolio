@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-circle-progress@1.2.2/dist/circle-progress.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-sharp-duotone fa-solid fa-user-secret"></i>My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Offcanvas Menu for Mobile Screens -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#hero" style="color: #00252A;"><i
+                      class="fas fa-home nav-icon"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#About" style="color: #00252A"><i
+                      class="fas fa-user nav-icon"></i>About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#skills-page" style="color: #00252A"><i
+                      class="fas fa-cogs nav-icon"></i>Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#projects" style="color: #00252A"><i
+                      class="fas fa-project-diagram nav-icon"></i>Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#contact" style="color: #00252A"><i
+                      class="fas fa-envelope nav-icon"></i>Contact-Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero" data-aos="flip-down" data-aos-duration="3000">
+      <div class="hero-image">
+        <img src="images/1725728387595.jpg" alt="Adeline Palmerston">
+      </div>
+      <div class="hero-content">
+        <h1>Hello, It's Me<br><span class="highlight" style="color: #00bcd4; font-weight: bold; font-size: 56px;">Ganesh
+            Dholi</span></h1>
+        <h1 style="color: #f4f4f4; margin-top: -30px; font-size: 33px;">And I'm <span id="animated-text"></span></h1>
+        <p>With expertise in vulnerability assessments and penetration testing (VAPT), I identify and eliminate security
+          risks, ensuring robust protection for web applications. I also design and develop secure, responsive, and
+          user-focused websites that integrate advanced security measures to safeguard content and deliver exceptional
+          digital experiences.</p>
+      </div>
+    </section>
+
+    <section id="About" data-aos="zoom-out-up" data-aos-duration="1000">
+      <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container bottomContainer">
+          <div class="ultimateImg">
+            <img class="mainImg" src="./images/1725728387595.jpg" alt="Profile Image">
+            <div class="purpleBox">
+              <p class="purpleText">
+                Experienced Cyber Security Specialist skilled in securing systems, mitigating risks, and ensuring data
+                protection with innovative solutions.
+              </p>
+              <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"
+                alt="Rating Stars">
+            </div>
+          </div>
+          <div class="allText bottomText">
+            <p class="text-blk headingText">About Me</p>
+            <p class="text-blk subHeadingText" style="font-size: 30px;">Cyber Security Specialist:<br><span
+                class="text-blk subHeadingText subHeadinganimation"></span></p>
+            <p class="text-blk description">Experienced Cyber Security Specialist with a strong track record in
+              identifying vulnerabilities, implementing robust security measures, and ensuring compliance with industry
+              standards. Skilled in delivering innovative solutions to protect sensitive data and systems while
+              maintaining operational efficiency.</p>
+            <div class="social-media-icons">
+              <a href="https://www.instagram.com/ganesh.dholi.104/" target="_blank" class="circle insta"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ganeshdholi/" target="_blank" class="circle linkedin"><i
+                  class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/sunstarofficial01" target="_blank" class="circle github"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://x.com/DholiGanes24132" target="_blank" class="circle twitter"><i
+                  class="fab fa-twitter"></i></a>
+            </div>
+            <a class="explore" href="./Resume/Ganesh Dholi Resume.pdf" style="font-size: large; margin-bottom: 100px;">My Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-page" data-aos="zoom-in-up" data-aos-duration="1000">
+      <p id="Skills-main">My Skills</p>
+      <div class="skill_bar_section">
+        <div class="responsive-container-block2 big-container2">
+          <div class="responsive-cell-block wk-mobile-12 wk-ipadp-9 wk-tab-10 wk-desk-6 left-one">
+
+            <!-- Original Skills -->
+            <div class="left-skills">
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name mainbar">
+                    Vulnerability Assessment & Penetration Testing
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per" percentage="70"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Web Application Security & Network Security
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per two" percentage="80"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Ethical Hacking
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per three" percentage="50"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Digital Forensics & Incident Response
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per four" percentage="20"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Additional Skills -->
+            <div class="right-skills" id="saperated-skill">
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Threat Hunting & Malware Analysis
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per five" percentage="60"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Cloud Security & Compliance
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per six" percentage="75"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Security Operations Center (SOC) Management
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per seven" percentage="85"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="skills-name-box">
+                  <p class="text-blk skill-name">
+                    Security Information & Event Management
+                  </p>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-per eight" percentage="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="zoom-out-down" data-aos-duration="1000">
+      <div class="container my-5">
+        <h1 class="text-center">Latest Projects</h1>
+        <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img src="http://sq1754.tech/project-Img/amazonCLone.png" alt="Project Image">
+            <div class="project-info">
+              <h3>Snake Game</h3>
+              <p>A fun game built with HTML, CSS, and JavaScript.</p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img src="http://sq1754.tech/project-Img/foodweb.png" alt="Project Image">
+            <div class="project-info">
+              <h3>Spotify Clone</h3>
+              <p>A music streaming web app inspired by Spotify.</p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img src="http://sq1754.tech/project-Img/snake.png" alt="Project Image">
+            <div class="project-info">
+              <h3>Tic Tac Toe</h3>
+              <p>A simple and fun tic-tac-toe game.</p>
+            </div>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="flip-up" data-aos-duration="1000">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="60" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="phone">Contact Number:</label>
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="description">Description (Max 200 characters):</label>
+        <textarea id="description" name="description" required placeholder="Describe your inquiry "></textarea>
+        <span id="wordCount">Word Count: 0/200</span>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="India">India</option>
+        </select>
+
+        <label for="password">Password:</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+          <i class="fas fa-eye toggle-password" data-toggle="password"></i>
+        </div>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <div class="password-container">
+          <input type="password" id="confirm-password" name="confirm-password" required
+            placeholder="Confirm your password">
+          <i class="fas fa-eye toggle-password" data-toggle="confirm-password"></i>
+        </div>
+
+        <label for="captcha">CAPTCHA:</label>
+        <div id="captchaValue" class="captcha-box"></div> <!-- CAPTCHA box to display -->
+        <button type="button" id="refreshCaptcha" class="refresh-btn">Refresh</button>
+        <input type="text" id="captchaInput" name="captcha" required placeholder="Enter CAPTCHA">
+
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <!-- Modal -->
+      <div id="errorModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <p id="errorMessage">Error message will be displayed here.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer-main" data-aos="zoom-in-down" data-aos-duration="1000">
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are confident in our ability to provide exceptional services in security, digital forensics, and
+              development.
+              Reach out to us for innovative solutions tailored specifically to your needs.</p>
+          </div>
+
+          <!-- Location Section -->
+          <div class="footer-column">
+            <h3>Our Location</h3>
+            <div class="footer-location">
+              <p>123 Diggi bazar, Gujur mohalla</p>
+              <p>Ajmer, Rajasthan, 305001</p>
+              <p>Email: ganeshdholi88@gmail.com</p>
+              <p>Phone: +918949276567</p>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills-page">Skills</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container">
+          <!-- Embed Google Map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1220.280461879844!2d74.63166553209051!3d26.45545651382164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1735669640776!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          &copy; 2024 Security Expert Portfolio. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
