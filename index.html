@@ -17,13 +17,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-circle-progress@1.2.2/dist/circle-progress.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
   </head>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fa-sharp-duotone fa-solid fa-user-secret"></i>My Portfolio</a>
+          <a class="navbar-brand" style="cursor: default;" href="#"><i class="fa-sharp-duotone fa-solid fa-user-secret"></i>My Portfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#hero" style="color: #00252A;"><i
+                  <a class="nav-link active" aria-current="page" href="#home" style="color: #00252A;"><i
                       class="fas fa-home nav-icon"></i>Home</a>
                 </li>
                 <li class="nav-item">
@@ -64,18 +65,19 @@
       </nav>
     </header>
 
-    <section id="hero" data-aos="flip-down" data-aos-duration="3000">
-      <div class="hero-image">
+    <section id="home" data-aos="flip-down" data-aos-duration="3000">
+      <div class="home-image">
         <img src="images/1725728387595.jpg" alt="Adeline Palmerston">
       </div>
-      <div class="hero-content">
+      <div class="home-content">
         <h1>Hello, It's Me<br><span class="highlight" style="color: #00bcd4; font-weight: bold; font-size: 56px;">Ganesh
             Dholi</span></h1>
         <h1 style="color: #f4f4f4; margin-top: -30px; font-size: 33px;">And I'm <span id="animated-text"></span></h1>
-        <p>With expertise in vulnerability assessments and penetration testing (VAPT), I identify and eliminate security
-          risks, ensuring robust protection for web applications. I also design and develop secure, responsive, and
-          user-focused websites that integrate advanced security measures to safeguard content and deliver exceptional
-          digital experiences.</p>
+        <p>Experienced Security Specialist & Aspiring DevOps Engineer:
+          Adept at securing systems, mitigating risks, and optimizing workflows. 
+          Passionate about combining cybersecurity expertise with DevOps practices to 
+          build resilient, scalable infrastructure, automate processes, and drive efficiency, 
+          ensuring seamless collaboration and robust security across the development and operations lifecycle.</p>
       </div>
     </section>
 
@@ -86,8 +88,8 @@
             <img class="mainImg" src="./images/1725728387595.jpg" alt="Profile Image">
             <div class="purpleBox">
               <p class="purpleText">
-                Experienced Cyber Security Specialist skilled in securing systems, mitigating risks, and ensuring data
-                protection with innovative solutions.
+                Experienced Cyber Security Specialist & Aspiring DevOps Engineer:
+                Skilled in securing systems, mitigating risks, and optimizing workflows to build secure, scalable infrastructure using DevOps practices.
               </p>
               <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"
                 alt="Rating Stars">
@@ -95,12 +97,13 @@
           </div>
           <div class="allText bottomText">
             <p class="text-blk headingText">About Me</p>
-            <p class="text-blk subHeadingText" style="font-size: 30px;">Cyber Security Specialist:<br><span
+            <p class="text-blk subHeadingText" style="font-size: 30px; margin-bottom: 10px;">Aspiring DevOps Engineer: <br><span
                 class="text-blk subHeadingText subHeadinganimation"></span></p>
-            <p class="text-blk description">Experienced Cyber Security Specialist with a strong track record in
-              identifying vulnerabilities, implementing robust security measures, and ensuring compliance with industry
-              standards. Skilled in delivering innovative solutions to protect sensitive data and systems while
-              maintaining operational efficiency.</p>
+            <p class="text-blk description">I'm Ganesh Dholi, a third-year B.Tech student specializing in Cybersecurity. 
+              With expertise in ethical hacking, pen testing, and digital forensics, 
+              I’m passionate about DevOps. I aim to integrate security into development 
+              using tools like Docker, Kubernetes, and CI/CD, aspiring to become a 
+              cybersecurity expert in the future.</p>
             <div class="social-media-icons">
               <a href="https://www.instagram.com/ganesh.dholi.104/" target="_blank" class="circle insta"><i
                   class="fab fa-instagram"></i></a>
@@ -128,7 +131,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name mainbar">
-                    Vulnerability Assessment & Penetration Testing
+                    Version Control (Git)
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -139,7 +142,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Web Application Security & Network Security
+                    Website development
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -150,7 +153,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Ethical Hacking
+                    Automation
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -161,7 +164,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Digital Forensics & Incident Response
+                    Ethical hacking & Digital Forensics
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -174,7 +177,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Threat Hunting & Malware Analysis
+                    CI/CD(Continuous Integration / Continuous Delivery)
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -185,7 +188,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Cloud Security & Compliance
+                    Cloud Computing & Security
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -196,7 +199,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Security Operations Center (SOC) Management
+                    Basic Networking
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -207,7 +210,7 @@
               <div class="skills">
                 <div class="skills-name-box">
                   <p class="text-blk skill-name">
-                    Security Information & Event Management
+                    Containerization (Docker, Kubernetes)
                   </p>
                 </div>
                 <div class="skill-bar">
@@ -254,7 +257,7 @@
     </section>
 
     <section id="contact" data-aos="flip-up" data-aos-duration="1000">
-      <h1>Contact Us</h1>
+      <h1>Contact Me</h1>
       <form id="contactForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" maxlength="60" required placeholder="Enter your name">
@@ -268,13 +271,6 @@
         <label for="description">Description (Max 200 characters):</label>
         <textarea id="description" name="description" required placeholder="Describe your inquiry "></textarea>
         <span id="wordCount">Word Count: 0/200</span>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country" required>
-          <option value="USA">USA</option>
-          <option value="Canada">Canada</option>
-          <option value="India">India</option>
-        </select>
 
         <label for="password">Password:</label>
         <div class="password-container">
@@ -332,7 +328,7 @@
           <div class="footer-column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#hero">Home</a></li>
+              <li><a href="#home">Home</a></li>
               <li><a href="#skills-page">Skills</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#contact">Contact</a></li>

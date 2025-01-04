@@ -126,6 +126,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return true;
   }
+  // Function to save form data to Excel
+function saveToExcel() {
+  // Get form data
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const description = document.getElementById("description").value;
+  const password = document.getElementById("password").value;
+
+  // Prepare data for Excel
+  const data = [
+    ["Email", "Phone", "Description", "Password"],  // Headers
+    [email, phone, description, password],  // Data row
+  ];
+
+  // Create a new workbook and add the data as a worksheet
+  const wb = XLSX.utils.book_new();
+  const ws = XLSX.utils.aoa_to_sheet(data);
+  XLSX.utils.book_append_sheet(wb, ws, "Form Data");
+
+  // Trigger download of Excel file
+  XLSX.writeFile(wb, "FormData.xlsx");
+}
 
   // Real-time Validation
   emailInput.addEventListener("blur", validateEmail);
@@ -148,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showErrorModal("Please fix the errors before submitting.");
     } else {
       alert("Your information has been successfully submitted!");
-      window.location.reload();//Reloads the page after successfully submitted
+      saveToExcel();  // Save data to Excel if everything is valid
     }
   });
 
@@ -228,7 +250,7 @@ function flip(doSomething, firstEls, getLastEls = () => firstEls) {
 // Typewriter effect for rotating roles
 document.addEventListener('DOMContentLoaded', () => {
   const textElement = document.getElementById("animated-text");
-  const roles = ["Security Expert", "Frontend Developer", "DFIR Expert"];
+  const roles = ["Security Expert", "DevOps Aspirant", "Frontend Developer"];
   let index = 0;
 
   function typeWriterEffect(text, callback) {
@@ -255,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Typewriter effect for another text
-const text = "Protecting Systems, Mitigating Risks, Ensuring Data Security.";
+const text = "Optimizing Workflows, Automating Processes, and Enhancing System Efficiency.";
 const container = document.querySelector(".text-blk.subHeadingText.subHeadinganimation");
 let index2 = 0;
 let cycleCount = 0;
