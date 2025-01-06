@@ -126,28 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return true;
   }
-  // Function to save form data to Excel
-function saveToExcel() {
-  // Get form data
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const description = document.getElementById("description").value;
-  const password = document.getElementById("password").value;
 
-  // Prepare data for Excel
-  const data = [
-    ["Email", "Phone", "Description", "Password"],  // Headers
-    [email, phone, description, password],  // Data row
-  ];
-
-  // Create a new workbook and add the data as a worksheet
-  const wb = XLSX.utils.book_new();
-  const ws = XLSX.utils.aoa_to_sheet(data);
-  XLSX.utils.book_append_sheet(wb, ws, "Form Data");
-
-  // Trigger download of Excel file
-  XLSX.writeFile(wb, "FormData.xlsx");
-}
 
   // Real-time Validation
   emailInput.addEventListener("blur", validateEmail);
@@ -170,19 +149,32 @@ function saveToExcel() {
       showErrorModal("Please fix the errors before submitting.");
     } else {
       alert("Your information has been successfully submitted!");
-      saveToExcel();  // Save data to Excel if everything is valid
+      // Prepare email content
+      const subject = encodeURIComponent("New Contact Form Submission From portfoio");
+      const body = encodeURIComponent(
+        `You have received a new message:\n\nEmail: ${email}\nPhone: ${phone}\nMessage: ${description}`
+      );
+
+      // Use `mailto:` to open the email client
+      const mailtoLink = `mailto:ganeshdholi88@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+
+      // Reset the form and refresh CAPTCHA without opening any new window
+      setTimeout(function () {
+        window.location.reload();  // Refresh the page
+      }, 2000);  // Give it a small delay before refreshing to allow `mailto` action
     }
   });
 
-  // Toggle Password Visibility
-  document.querySelectorAll(".toggle-password").forEach(toggle => {
-    toggle.addEventListener("click", function () {
-      const target = document.querySelector(`input[name="${this.dataset.toggle}"]`);
-      const type = target.getAttribute("type") === "password" ? "text" : "password";
-      target.setAttribute("type", type);
-      this.classList.toggle("fa-eye-slash");
-    });
+// Toggle Password Visibility
+document.querySelectorAll(".toggle-password").forEach(toggle => {
+  toggle.addEventListener("click", function () {
+    const target = document.querySelector(`input[name="${this.dataset.toggle}"]`);
+    const type = target.getAttribute("type") === "password" ? "text" : "password";
+    target.setAttribute("type", type);
+    this.classList.toggle("fa-eye-slash");
   });
+});
 });
 
 
